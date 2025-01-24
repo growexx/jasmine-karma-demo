@@ -79,7 +79,6 @@ npx karma init
 Test a simple calculator function.
 
 **Source Code:**
-Test a simple calculator function.
 ```javascript
 function add(a, b) {
     return a + b;
@@ -88,7 +87,6 @@ module.exports = add;
 ```
 
 **Test File:**
-Test a simple calculator function.
 ```javascript
 const add = require('./add');
 describe("Calculator", () => {
@@ -96,6 +94,11 @@ describe("Calculator", () => {
         expect(add(2, 3)).toBe(5);
     });
 });
+```
+
+**Run Tests:**
+```console
+npx karma start
 ```
 
 ### Advanced Features
